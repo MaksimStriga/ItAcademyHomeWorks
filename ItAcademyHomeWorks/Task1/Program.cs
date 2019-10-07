@@ -10,15 +10,15 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            //явное преобразование типов
-            Int16 i1 = 1;
-            Int32 i2;
+            //Неявное преобразование типов
+            short i1 = 1;
+            int i2;
             i2 = i1;
             float f1;
             f1 = i2;
             double t34;
             t34 = f1;
-            //неявное преобразование типов
+            //Явное преобразование типов
             double a1 = 1.1;
             float g3;
             g3=(float)a1;
@@ -31,10 +31,8 @@ namespace Task1
             object s1 = 123;
             //распаковка
             int k7 = 6;
-            object p9;
-            p9 = k7;
-
-
+            object p9 = k7;
+            int k8 = (int)p9;
         }
     }
 }
